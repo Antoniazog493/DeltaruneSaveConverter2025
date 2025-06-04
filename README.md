@@ -5,8 +5,8 @@ A C#.NET command line tool to convert DELTARUNE Chapter 1 save files between PC 
 This program is a work in progress and may not work in all situations - this has only been tested converting 1 file from the Nintendo Switch version of DELTARUNE to the PC version and back.
 
 ## Usage
-
-Requires [.NET 5.0 Runtime](https://dotnet.microsoft.com/download) (or later...?) installed.
+I updated it so .NET 8.0 could be used to run it
+(Requires [.NET 5.0 Runtime](https://dotnet.microsoft.com/download) (or later...?) installed.)
 
 ```
 DeltaruneSaveConverter [command] [path1] [path2]
@@ -45,7 +45,7 @@ DeltaruneSaveConverter ConvertFileFromPC ./pcsave/filech1_0 ./consolesave/filech
 
 ## Compiling
 
-Compiling the program requires the [.NET 5.0 SDK](https://dotnet.microsoft.com/download) and can be done by typing `dotnet build` into a command line. Windows users can also use Visual Studio 2019 or later to compile the solution.
+Compiling the program requires the [.NET 8.0 SDK](https://dotnet.microsoft.com/download) and can be done by typing `dotnet build` into a command line. Windows users can also use Visual Studio 2019 or later to compile the solution.
 
 ## TODO
 
