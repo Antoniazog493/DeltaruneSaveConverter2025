@@ -52,7 +52,7 @@ Compiling the program requires the [.NET 5.0 SDK](https://dotnet.microsoft.com/d
 (in no particular order)
 
 - Test conversion between PS4 and PC
-- Initial DELTARUNE Chapter 2 support
+- Initial DELTARUNE Chapter 2 support (Seems to be working now -Antoniazog493)
 - Friendlier user interface (+ GUI edition?)
 - Probably more idk, suggestions and contributions welcomed.
 - Far future/another project, make this into a multitool?
