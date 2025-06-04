@@ -6,7 +6,7 @@ This program is a work in progress and may not work in all situations - this has
 
 ## Usage
 I updated it so .NET 8.0 could be used to run it
-(Requires [.NET 5.0 Runtime](https://dotnet.microsoft.com/download) (or later...?) installed.)
+(Requires [.NET 8.0 Runtime](https://dotnet.microsoft.com/download) (or later...?) installed.)
 
 ```
 DeltaruneSaveConverter [command] [path1] [path2]
