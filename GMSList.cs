@@ -103,7 +103,7 @@ namespace DeltaruneSaveConverter
 
     class GMSListDecoder
     {
-        private byte[] rawlist;
+        private byte[]? rawlist;
         private List<GMSListItem> list;
 
         public GMSListDecoder(string listhex)
@@ -204,7 +204,7 @@ namespace DeltaruneSaveConverter
         public string GetString(int i)
         {
             if (i < 0 || i >= list.Count) return "";
-            return list[i].ToString();
+            return list[i].ToString() ?? "";
         }
 
         public double GetReal(int i)
@@ -247,7 +247,7 @@ namespace DeltaruneSaveConverter
 
     class GMSListEncoder
     {
-        private byte[] rawlist;
+        private byte[]? rawlist;
         private List<GMSListItem> list;
 
         public GMSListEncoder()
@@ -327,7 +327,7 @@ namespace DeltaruneSaveConverter
         public string GetString()
         {
             GetRaw();
-            return BitConverter.ToString(rawlist).Replace("-", "");
+            return BitConverter.ToString(rawlist!).Replace("-", "");
         }
     }
 }

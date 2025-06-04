@@ -14,7 +14,9 @@ namespace DeltaruneSaveConverter
         {
             string contents = File.ReadAllText(SAVFile);
             contents = contents.Split('\0')[0]; // remove any null bytes
-            Dictionary<string, string> json = JsonSerializer.Deserialize<Dictionary<string, string>>(contents);
+            Dictionary<string, string>? json = JsonSerializer.Deserialize<Dictionary<string, string>>(contents);
+            if (json == null)
+                throw new InvalidDataException("Failed to deserialize the save file: JSON data is null.");
             foreach (string file in json.Keys)
             {
                 if (file == "default") continue;
